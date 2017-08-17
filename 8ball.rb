@@ -7,10 +7,23 @@ def ask
   puts "Ask me a question, puny flesh bag, and you shall know your future!"
   puts "Or, I guess type Exit if you're leaving"
   puts ""
-  sel = gets.strip.downcase
-  case sel
-    when sel == "exit"
+  sel = gets.strip
+
+  case sel 
+    when "exit"
       puts "Fine. Leave. I dont care... I miss you."
+      exit
+    when "add_answers"
+      puts ''
+      puts 'Wily human, you dare change my knowlege?'
+      puts 'What is the new response you wish to force into my brain?'
+      puts ''
+      new_ans = gets.strip
+
+    when "reset_answers"
+      
+    when "print_answers"
+      
     else  
       answers =[
         "42",
