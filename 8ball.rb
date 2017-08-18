@@ -44,7 +44,7 @@ def ask
       puts 'Wily human, you dare change my knowlege?'.colorize(:red)
       puts 'What is the new response you wish to force into my brain?'.colorize(:red)
       puts ''
-      newans = gets.strip
+      newans = gets.strip.downcase
         if @ans_ed.include? newans
           puts 'I appear to already know this.'
           ask
